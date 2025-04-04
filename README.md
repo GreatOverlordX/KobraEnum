@@ -49,3 +49,24 @@ python3 ophio.py -s -n -p -v
 
 Run the `-h` or `--help` command, so you can see the options.
 
+
+----
+
+**TO NOTE** - if the local package database from
+the **Arch Linux** mirrors has not been refreshed,
+then you will not see the outdated packages.
+
+- Expect the same behaviour on debian based distros.
+
+### Extra info
+
+The implementation of :
+```python
+subprocess.run(['sudo', 'pacman', '-Syyu', capture_output=True, text=True, check=True)
+```
+In the code, was planned, however, I personally wanted to keep it as light as possible,
+since that process might take some time in slower networks.
+Besides, I also had in mind the implementation of this in a `pentest/redteam` scenario where the attacker
+hasn't had sudo privileges yet to run the `sudo pacman -Syu` or `sudo pacman -Syyu` command.
+
+*Nevertheless feel free to implement it in your own deployment.*
