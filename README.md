@@ -1,12 +1,13 @@
 # KobraEnum
 
+This is a system Enumeration Tool on `Python`.
+
 ## Ophio.py
 
 The name is inspired in the _Ophiophagus hannah_ also known as "King Cobra"
 due to its exceptional skills for reconnaissance in its hunting process.
 
-This is a system Enumeration Tool on `Python`.
-Necessary libraries -> `psutil` -> run `pip install psutil` to install it.
+**Necessary libraries** -> `psutil` -> run `pip install psutil` to install it.
 
 ## Usage
 
