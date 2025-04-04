@@ -100,7 +100,7 @@ def get_installed_packages(verbose=False, count_only=False, outdated_only=False)
             for package in outdated_packages:
                 print(f"\n❯❯ ⚠ {package} ⚠\n")
         else:
-            print("☰☰NO OUTDATED package was found ☰☰\n")
+            print("☰☰ NO OUTDATED package was found ☰☰\n")
     elif verbose:
         if outdated_packages:
             print(" ↓ INSTALLED PACKAGES ↓ [ outdated packages are marked with ⚠ and ✖  ]\n")
